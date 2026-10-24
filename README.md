@@ -28,6 +28,16 @@ The browser only calls the local backend (`/api/workout/*`). The backend holds t
 
 > `.env` is git-ignored. Never commit your API key.
 
+## Deploy (free, auto-updates)
+
+The repo includes a [Render](https://render.com) Blueprint (`render.yaml`).
+
+1. Sign in to Render with GitHub → **New → Blueprint** → pick this repo.
+2. Enter your `GEMINI_API_KEY` when asked → **Apply**.
+3. Every `git push` to `main` redeploys automatically.
+
+Free instances sleep after 15 minutes idle; the first visit afterwards takes about a minute to wake up.
+
 ## License
 
 [MIT](LICENSE)

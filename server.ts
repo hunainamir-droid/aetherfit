@@ -302,7 +302,8 @@ For each alternative, explain why it's a great match and how to execute it prope
 });
 
 // Vite or Static Serving
-const PORT = 3000;
+// Hosting platforms (e.g. Render) assign the port via PORT.
+const PORT = Number(process.env.PORT) || 3000;
 
 async function startServer() {
   if (process.env.NODE_ENV !== 'production') {

@@ -1,0 +1,20 @@
+# Render Blueprint: free web service that redeploys on every push to main.
+services:
+  - type: web
+    name: aetherfit
+    runtime: node
+    plan: free
+    branch: main
+    autoDeployTrigger: commit
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: "24"
+      - key: GEMMA_MODEL
+        value: gemma-4-26b-a4b-it
+      - key: GEMINI_API_KEY
+        sync: false # entered in the Render dashboard, never committed
