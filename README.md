@@ -27,3 +27,7 @@ The browser only calls the local backend (`/api/workout/*`). The backend holds t
 4. Open http://localhost:3000
 
 > `.env` is git-ignored. Never commit your API key.
+
+## License
+
+[MIT](LICENSE)
