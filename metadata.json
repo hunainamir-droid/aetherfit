@@ -1,0 +1,6 @@
+{
+  "name": "AetherFit - AI Workout Plan Architect",
+  "description": "Generate science-based, personalized workout programs tailored to your fitness goals, equipment, schedule, and biomechanics with AI-guided coaching and active session tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
